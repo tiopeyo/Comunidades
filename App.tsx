@@ -3,12 +3,11 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import OpportunityCard from './components/OpportunityCard';
-import Chatbot from './components/Chatbot';
 import { 
   BookHeart, Landmark, Palmtree, GraduationCap,
   FileSearch, Mic, AudioWaveform, Camera, Map, 
   Users, Link as LinkIcon, Gamepad, FlaskConical, SignalLow,
-  UserCheck, Repeat, Eye, Scale
+  UserCheck, Repeat, Eye, Scale, Mail, Phone, Globe, Linkedin, User
 } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -193,20 +192,55 @@ const App: React.FC = () => {
             </div>
           </div>
         </section>
+        
+        <section id="contacto" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+            <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-12">
+                    <h2 className="text-base font-semibold text-amber-600 tracking-wide uppercase">NetxTrust</h2>
+                    <p className="mt-2 text-3xl font-extrabold text-stone-900 tracking-tight sm:text-4xl">
+                        Domina la Inteligencia Artificial sin ser Experto en Tecnología
+                    </p>
+                </div>
 
-        <section id="chat" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-           <div className="max-w-4xl mx-auto">
-             <div className="text-center mb-12">
-                <h2 className="text-base font-semibold text-amber-600 tracking-wide uppercase">Asistente Digital</h2>
-                <p className="mt-2 text-3xl font-extrabold text-stone-900 tracking-tight sm:text-4xl">
-                  Consulta la Sabiduría Ancestral
-                </p>
-                <p className="mt-4 max-w-2xl mx-auto text-xl text-stone-500">
-                  Haz una pregunta sobre las oportunidades de la IA para los pueblos originarios. Nuestro asistente, basado en los informes, te responderá.
-                </p>
-              </div>
-              <Chatbot />
-           </div>
+                <div className="bg-stone-100 rounded-lg shadow-xl overflow-hidden">
+                    <div className="p-8">
+                        <h3 className="text-2xl font-bold text-stone-800 text-center">Sobre NetxTrust</h3>
+                    </div>
+                    <div className="bg-stone-50 p-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                        <div className="md:col-span-1 flex justify-center">
+                            <div className="w-40 h-40 rounded-full bg-stone-300 flex items-center justify-center ring-4 ring-amber-500">
+                                 <User size={80} className="text-stone-500"/>
+                            </div>
+                        </div>
+                        <div className="md:col-span-2 text-center md:text-left">
+                            <h4 className="text-2xl font-bold text-stone-900">Pedro L.A. Hidalgo Rodriguez</h4>
+                            <p className="text-lg text-amber-600 font-semibold mt-1">Ingeniero Informático especializado en Transformación Digital</p>
+                            <p className="mt-2 text-stone-600">Con amplia experiencia en el sector tecnológico, enfocado en innovación digital y la aplicación de inteligencia artificial.</p>
+                        </div>
+                    </div>
+                     <div className="bg-stone-100 p-8 border-t border-stone-200">
+                         <h4 className="text-xl font-bold text-stone-800 text-center mb-6">Información de Contacto</h4>
+                         <div className="max-w-md mx-auto grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+                             <a href="mailto:netxtrust@gmail.com" className="flex items-center gap-3 text-stone-700 hover:text-amber-600 transition-colors group">
+                                 <div className="bg-white p-2 rounded-full shadow-md group-hover:bg-amber-100"><Mail size={20} /></div>
+                                 <span>netxtrust@gmail.com</span>
+                             </a>
+                             <a href="https://wa.me/56994294397" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-stone-700 hover:text-amber-600 transition-colors group">
+                                 <div className="bg-white p-2 rounded-full shadow-md group-hover:bg-amber-100"><Phone size={20} /></div>
+                                 <span>+56 9 9429 4397</span>
+                             </a>
+                             <a href="http://www.pyaservicios.cl" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-stone-700 hover:text-amber-600 transition-colors group">
+                                 <div className="bg-white p-2 rounded-full shadow-md group-hover:bg-amber-100"><Globe size={20} /></div>
+                                 <span>www.pyaservicios.cl</span>
+                             </a>
+                             <a href="https://www.linkedin.com/in/pedro-hidalgo-b" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-stone-700 hover:text-amber-600 transition-colors group">
+                                 <div className="bg-white p-2 rounded-full shadow-md group-hover:bg-amber-100"><Linkedin size={20} /></div>
+                                 <span>Perfil de LinkedIn</span>
+                             </a>
+                         </div>
+                     </div>
+                </div>
+            </div>
         </section>
       </main>
       <footer className="bg-stone-800 text-white py-8">
